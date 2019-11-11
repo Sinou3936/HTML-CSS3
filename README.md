@@ -7,6 +7,8 @@ HTML와 CSS3를 활용한 나의 홈페이지 제작
 
 배경으로 내가 좋아하는 이미지를 사용하여 배경으로 사용하였다. 
 
-출처: 멜론 앨범 자켓 및 이미지(인기차트 포함): https://www.melon.com/ 
+출처: 
+
+     멜론 앨범 자켓 및 이미지(인기차트 포함): https://www.melon.com/ 
 
      배경이미지: https://bandori.fandom.com/wiki/Ringing_Bloom
