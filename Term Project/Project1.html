@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>music story</title>
+    <style>
+        #header{
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        ul{
+            width: 800px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            display: table;
+        }
+
+        #li{
+            list-style: none;
+            padding: 15px;
+            float: left;
+        }
+        #li li:nth-child(n){background: skyblue;}
+        #li li:nth-of-type(n){
+            color: black;
+            font-weight: bold;
+            }
+        #wrap{
+            overflow: hidden;
+        }
+
+        #aside-right{
+            width: 30%;
+            float: left;
+        }
+        #section{
+            width: 70%;
+            float: left;
+        }
+        #footer{
+            width: 100%;
+        }
+        hr{
+            border: solid 3px black;
+            box-shadow: 10px 10px 30px peru;
+        }
+        a {text-decoration:none}
+        a:link{color:black}
+        a:visited {color:gray}
+        
+        #aside-right input:nth-of-type(1){display: none;}
+        #aside-right input:nth-of-type(1) ~ div:nth-of-type(1) {display: none;}
+        #aside-right input:nth-of-type(1):checked ~ div:nth-of-type(1) {display: block;}
+
+        #aside-right input:nth-of-type(2){display: none;}
+        #aside-right input:nth-of-type(2) ~ div:nth-of-type(2) {display: none;}
+        #aside-right input:nth-of-type(2):checked ~ div:nth-of-type(2) {display: block;}
+
+        #aside-right input:nth-of-type(3){display: none;}
+        #aside-right input:nth-of-type(3) ~ div:nth-of-type(3) {display: none;}
+        #aside-right input:nth-of-type(3):checked ~ div:nth-of-type(3) {display: block;}
+
+        section.buttons {overflow: hidden;}
+        section.buttons > label{
+            display: block; float: left;
+            width: 100px; height: 30px;
+            line-height: 30px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid black;
+            background: black;
+            color: white;
+        }
+        #aside-right input:nth-of-type(1):checked ~section.buttons > label:nth-of-type(1){
+            background: black;
+            color: white;
+        }
+        #aside-right input:nth-of-type(2):checked ~section.buttons > label:nth-of-type(2){
+            background: black;
+            color: white;
+        }
+        #aside-right input:nth-of-type(3):checked ~section.buttons > label:nth-of-type(3){
+            background: black;
+            color: white;
+        }
+        #aside-right .tab_content{
+            border: 1px solid black;
+            width: 300px; height: 500px;
+            
+        }
+        body{
+            background-image: url('background.png') ;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="header" style="text-align: center;">
+                <span>
+                    <a href="Project1.html"><img src="musichome.jpg" style="width: 80px;"/></a>
+                </span>
+                <br>
+                <span>
+                    <input id="search" type="text" value="음악 검색 " name="음악 검색"  style="width: 500px; height: 50px fit-content;" >
+                </span>
+                <span>
+                    <input id="search" type="image" src="seach.jpg" style="width: 40px; height: 40px;" >
+                </span>
+        </div>
+        <div id="Nevigation">
+            <ul>
+                <li id="li"><a href="https://www.melon.com/chart/index.htm">음악나라 차트</a></li>
+                <li id="li"><a href="https://www.melon.com/new/index.htm">최신 음악</a></li>
+                <li id="li"><a href="https://www.melon.com/genre/song_list.htm?gnrCode=GN0100">장르 음악</a></li>
+                <li id="li"><a href="https://www.melon.com/artistplus/todayupdate/index.htm">스타포스트</a></li>
+                <li id="li"><a href="https://www.melon.com/musicstory/today/index.htm">메거진</a></li>
+                <li id="li"><a href="https://www.melon.com/musicstory/today/index.htm">뮤직어워드</a></li>
+                <li id="li"><a href="https://www.melon.com/customer/announce/index.htm">더보기></a></li>
+            </ul> 
+        </div>
+        <hr>
+        <br>
+        <div id="wrap">
+            <div id="section">
+                <table style="width: 80%; margin: auto;">
+                    <thead>
+                        <th>
+                            <a href="https://www.melon.com/new/album/index.htm">
+                            최신앨범>>
+                            </a>
+                        </th>
+                        <th>전체</th>
+                        <th>가요</th>
+                        <th>POP</th>
+                        <th>OST</th>
+                        <th>J-POP</th>
+                    </thead>
+                </table>
+                <table style="width: 70%; margin: auto;">
+                    <tbody style="text-align: center;">
+                        <td>
+                            <a href="https://www.melon.com/album/detail.htm?albumId=10348811">
+                                <img src="1.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/album/detail.htm?albumId=10349039">
+                            <img src="2.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/album/detail.htm?albumId=10348769">
+                            <img src="3.jpg">
+                            </a>
+                        </td>
+                    </tbody>
+                    <tbody style="text-align: center;">
+                        <td>
+                            <a href="https://www.melon.com/album/detail.htm?albumId=10348124">
+                            <img src="4.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/album/detail.htm?albumId=10349021">
+                            <img src="5.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/album/detail.htm?albumId=10348723">
+                            <img src="6.jpg">
+                            </a>
+                        </td>
+                    </tbody>
+                </table>
+                <br>
+                <h2  style="padding-left: 10em;">인기 있어요 지금 이슈가 되는 아티스트 인기 콘텐츠 입니다.</h2> 
+                <hr>
+                <table style="width: 60%; margin: auto;">
+                    <tbody>
+                        <td>
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=9632">
+                            <img src="8.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=9627">
+                            <img src="9.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211153">
+                            <img src="10.jpg">
+                            </a>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>
+                                <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=9632">
+                                    <h4>배순탁의 갇띵, 장필순 8집</h4>
+                                </a>
+                        </td>
+                        <td>
+                                <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=9627">
+                                    <h4>트로트가 에능에 미친영향</h4>
+                                </a>
+                        </td>
+                        <td>
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211153">
+                                <h4>10cm 2019 겨울콘서트 '10Sion</h4>
+                            </a>
+                        </td>
+                        
+                    </tbody>
+                    <tbody>
+                        <td>
+                            <a href="https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm?plylstSeq=467347581">
+                            <img src="11.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50210758">
+                            <img src="12.jpg">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm?plylstSeq=467076788">
+                            <img src="13.jpg">
+                            </a>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>
+                                <a href="https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm?plylstSeq=467347581">
+                                        <h4>브런치 카페에서 흘러나올듯한 BGM</h4>
+                                </a>
+                        </td>
+                        <td>
+                                <a href="https://vod.melon.com/video/detail2.htm?mvId=50210758">
+                                    <h4>Audery 'Souffle' 한글자막 ver.</h4>
+                                </a>
+                        </td>
+                        <td>
+                                <a href="https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm?plylstSeq=467076788">
+                                    <h4>날것 감성 빈티지 & 로파이 무드</h4>
+                                </a>
+                        </td>
+                    </tbody>
+                </table>
+                <br>
+                <h4 style="padding-left: 16em;">
+                    <a href="https://www.melon.com/artistplus/todayupdate/index.htm">
+                         새로 나왔어요>
+                    </a>
+                </h4>
+                <hr>
+                <table style="width: 60%; margin: auto;">
+                    <tbody>
+                        <td  style="text-align: center;">
+                            <a href="https://www.melon.com/artist/photo_detail.htm?artistId=2400706&photoId=80082711"><img src="22.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/artist/photo_detail.htm?artistId=2400706&photoId=80082711"><h5>설봄 입니다~ 2019년도 어느새 몇일 남지 않앗어요 ~그래서 2019..</h5>
+                            </a>
+                                <ruby>
+                                <rt>설봄 (Seolbom)</rt>
+                            </ruby>
+                        </td>
+                        <td  style="text-align: center;">
+                            <a href="https://www.melon.com/artist/photo_detail.htm?artistId=592049&photoId=80082687"><img src="23.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/artist/photo_detail.htm?artistId=592049&photoId=80082687"><h5>2919.11.14 18:00 KST Release</h5></a>
+                            <ruby>
+                                <rt>에릭남 (Eric Nam)</rt>
+                            </ruby>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td  style="text-align: center;">
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211467"><img src="24.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211467"><h5>괜찮아 by 유어썬 YourSun</h5></a>
+                            <ruby>
+                                <rt>모리쉬 (Morish)</rt>
+                            </ruby>
+                        </td>
+                        <td  style="text-align: center;">
+                            <a href="https://www.melon.com/story/detail.htm?storySeq=106701"><img src="25.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/story/detail.htm?storySeq=106701"><h5>비가 스며든 자리</h5></a>
+                            <ruby>
+                                <rt>Above Envy</rt>
+                            </ruby>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td  style="text-align: center;">
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211456"><img src="26.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211456"><h5>하늘나라 동화 I Cover by 강라희</h5></a>
+                            <ruby>
+                                <rt>천사들의메아리</rt>
+                            </ruby>
+                        </td>
+                        <td  style="text-align: center;">
+                            <a href="https://www.melon.com/story/detail.htm?storySeq=106700"><img src="27.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/story/detail.htm?storySeq=106700"><h5>마음을 편안하게 해주는 아름다운 선율</h5></a>
+                            <ruby>
+                                <rt>Miyuki Yoshino</rt>
+                            </ruby>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td style="text-align: center;">
+                            <a href="https://www.melon.com/artist/photo_detail.htm?artistId=2006344&photoId=80082678"><img src="28.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.melon.com/artist/photo_detail.htm?artistId=2006344&photoId=80082678"><h5>Stray Kids(스트레이 키즈) "Astronaut" TEASER IMAGE #한 #..</h5></a>
+                            <ruby>
+                                <rt>Stray Kids(스트레이 키즈)</rt>
+                            </ruby>
+                        </td>
+                        <td  style="text-align: center;">
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211451"><img src="29.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="https://vod.melon.com/video/detail2.htm?mvId=50211451"><h5>[MV] 이젠 더 이상 찾지 않기로 해 (Teaser)</h5></a>
+                            <ruby>
+                                <rt>도리토리</rt>
+                            </ruby>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <span>
+                <h2>로그인</h2>
+                <input id="id" type="text" name="id" value="아이디">
+                <input id="password" type="password" name="password" value="패스워드">
+                <br>
+                <input id="submit" type="submit" name="submit" value="로그인" style="width: 350px;">
+            </span>
+            <br>
+            <br>
+            <hr>
+
+            <div id="aside-right">
+                <h2>인기 차트</h2>
+                <input id="tab1" type="radio" name="tab" checked="checked"/>
+                <input id="tab2" type="radio" name="tab"/>
+                <input id="tab3" type="radio" name="tab"/>
+                <section class="buttons">
+                    <label for="tab1">1</label>
+                    <label for="tab2">2</label>
+                    <label for="tab3">3</label>
+                </section>
+                <div class="tab_content">
+                    <ol>
+                        <li>늦은 밤 너의 집 앞 골목&nbsp;&nbsp;<ruby><rt>노을</rt></ruby></li><hr>
+                        <li>Love poem&nbsp;&nbsp;<ruby><rt>아이유</rt></ruby></li><hr>
+                        <li>인기 (Feat. 송가인, 챈슬러)&nbsp;&nbsp;<ruby><rt>MC몽</rt></ruby></li><hr>
+                        <li>어떻게 이별까지 사랑하..&nbsp;&nbsp;<ruby><rt>AKMU</rt></ruby></li><hr>
+                        <li>불티(Spark)&nbsp;&nbsp;<ruby><rt>태연</rt></ruby></li><hr>
+                        <li>새 사랑&nbsp;&nbsp;<ruby><rt>송하예</rt></ruby></li><hr>
+                        <li>흔들리는 꽃들 속에...&nbsp;&nbsp;<ruby><rt>장범준</rt></ruby></li><hr>
+                        <li>조금 취했어 (Prod. ...&nbsp;&nbsp;<ruby><rt>임재현</rt></ruby></li><hr>
+                        <li>사랑이란 멜로디는 없어&nbsp;&nbsp;<ruby><rt>전상근</rt></ruby></li><hr>
+                        <li>있어줘요 &nbsp;&nbsp;<ruby><rt>장덕철</rt></ruby></li><hr>
+                    </ol>
+                    <h3 style="text-align: right;">더보기> </h3>
+                </div>
+                <div class="tab_content">
+                    <ol>
+                        <li>2002&nbsp;&nbsp;<ruby><rt>Anne-Marie</rt></ruby></li><hr>
+                        <li>Señorita&nbsp;&nbsp;<ruby><rt>Shawn Me....</rt></ruby></li><hr>
+                        <li>bad guy&nbsp;&nbsp;<ruby><rt>Billie Eilish</rt></ruby></li><hr>
+                        <li>Paris In The Rain&nbsp;&nbsp;<ruby><rt>Lauv</rt></ruby></li><hr>
+                        <li>Speechless (Full)&nbsp;&nbsp;<ruby><rt>Naomi Scott</rt></ruby></li><hr>
+                        <li>Believer&nbsp;&nbsp;<ruby><rt>Imagine Dragons</rt></ruby></li><hr>
+                        <li>comethru&nbsp;&nbsp;<ruby><rt>Jeremy Zucker</rt></ruby></li><hr>
+                        <li>EX&nbsp;&nbsp;<ruby><rt>Kiana Lede</rt></ruby></li><hr>
+                        <li>thank u, next&nbsp;&nbsp;<ruby><rt>Ariana Grande</rt></ruby></li><hr>
+                        <li>Lose You To Love Me&nbsp;&nbsp;<ruby><rt>Selena Gomez</rt></ruby></li><hr>
+                    </ol>
+                    <h3 style="text-align: right;">더보기> </h3>
+                </div>
+                <div class="tab_content">
+                    <ol>
+                        <li>방탄소년단</li><hr>
+                        <li>아이유</li><hr>
+                        <li>기리보이</li><hr>
+                        <li>태연(TAEYEON)</li><hr>
+                        <li>송가인</li><hr>
+                        <li>MC몽</li><hr>
+                        <li>노을</li><hr>
+                        <li>AKMU(악동뮤지션)</li><hr>
+                        <li>지코(ZICO)</li><hr>
+                        <li>폴킴</li><hr>
+                    </ol>
+                    <h3 style="text-align: right;">더보기> </h3>
+                </div>
+            </div> 
+        </div>
+        <hr>
+        <div id="foooter"><h1 style="color: greenyellow;">All reserved</h1>
+            <h3 style="text-align: center; color: green;">이름 : 김현승</h3>
+            <h3 style="text-align: center; color: green;">소속 : 코리아 아카데미 웹 개발</h3>
+            <h3 style="text-align: center; color: green;">직책 : 팀원(반장)</h3>
+        </div>
+    </body>
+</html>
